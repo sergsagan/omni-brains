@@ -1,0 +1,462 @@
+//header
+
+.header{
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: $bg-color;
+  padding: 42px 0;
+  position: relative;
+}
+
+.header-top{
+  margin-bottom: 115px;
+}
+
+.header-logo{
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
+}
+
+.logo{
+  color: $light-color;
+  font-family: $PNB;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 32px;
+  text-align: left;
+  display: block;
+
+  span{
+    display: block;
+    font-family: $PNL;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+
+.header-navigation{
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
+  text-align: right;
+}
+
+.nav{
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 15px;
+
+  li{
+    padding: 0 20px;
+
+    a{
+      font-family: $PNSB;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: rgb(254, 254, 254);
+      text-decoration: none;
+      @include transition(all .5s);
+
+      &:hover{
+        color: $stack-color;
+      }
+    }
+    &:first-child{
+      padding: 0 20px 0 0;
+    }
+  }
+}
+
+#menu, .sub-menu {
+  display: none;
+  list-style: none;
+}
+#menu-toggle{
+  display: none;
+}
+
+/*Change toggle size by adjusting width & height*/
+.tb-menu-toggle {
+  border: 0;
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+}
+
+/*Change toggle color here*/
+.tb-menu-toggle i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  -webkit-transition:all .2s;
+  -moz-transition:all .2s;
+  -o-transition:all .2s;
+  transition:all .2s;
+}
+.tb-menu-toggle i:nth-child(2) {
+  top: 40%;
+}
+.tb-menu-toggle i:nth-child(3) {
+  top: 80%;
+}
+
+/* Style the active toggle here */
+.tb-menu-toggle.tb-active-toggle i {  }
+
+/*Animation of the toggle*/
+.tb-menu-toggle.tb-animate-toggle i:first-child,
+.tb-menu-toggle.tb-animate-toggle i:nth-child(2){
+  top: 40%;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+.tb-menu-toggle.tb-animate-toggle i:nth-child(3){
+  top: 40%;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+
+.header-callback{
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-left: 20px;
+  text-align: right;
+
+  span{
+    color: $light-color;
+    font-family: $PNR;
+    font-size: 24px;
+    font-weight: 400;
+    display: block;
+  }
+  a{
+    color: rgb(255, 255, 255);
+    font-family: $PNR;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px dashed $light-color;
+    text-decoration: none;
+    @include transition(all .5s);
+
+    &:hover{
+      text-decoration: none;
+      border-bottom: none;
+    }
+  }
+}
+
+.header-base{
+  margin-bottom: 70px;
+
+  @include clearfix;
+}
+
+.header-animation{
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
+  text-align: center;
+}
+
+.application-costs{
+  display: inline-block;
+  vertical-align: top;
+  max-width: 195px;
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+
+  .name{
+    color: $light-color;
+    font-family: $PNR;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .price{
+    color: $light-color;
+    font-family: $PNR;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 60px;
+  }
+  .indicator{
+    max-width: 195px;
+    width: 100%;
+    height: 100px;
+    background-color: #8cd654;
+    margin-bottom: 15px;
+    @include transition(all 1.5s ease-out .5s);
+  }
+  .descript{
+    color: $light-color;
+    font-family: $PNR;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+  }
+}
+
+.number-of-applications{
+  display: inline-block;
+  vertical-align: top;
+  max-width: 195px;
+  width: 100%;
+
+  .name{
+    color: $light-color;
+    font-family: $PNR;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .amount{
+    color: $light-color;
+    font-family: $PNR;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 110px;
+  }
+  .indicator{
+    max-width: 195px;
+    width: 100%;
+    height: 50px;
+    background-color: $stack-color;
+    margin-bottom: 15px;
+  }
+  .descript{
+    color: $light-color;
+    font-family: $PNR;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+  }
+}
+
+.header-slogan{
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
+  text-align: left;
+  padding-top: 35px;
+
+  .slogan{
+    color: $light-color;
+    font-family: $PNSB;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+}
+.show-768{
+  display: none;
+}
+.header-descript{
+  margin: 0 auto;
+  max-width: 275px;
+  width: 100%;
+  text-align: center;
+
+  span{
+    display: block;
+    color: $light-color;
+    font-family: $PNR;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+//about
+
+.about{
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: $light-color;
+
+  .about-us{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 0 0 15px;
+
+    .title{
+      margin-bottom: 15px;
+      padding-top: 40px;
+      @extend .head-section;
+    }
+
+    p{
+      color: $head-color;
+      font-family: $PNR;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: left;
+    }
+  }
+
+  .info-user-1, .info-user-2{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 360px;
+
+    figure{
+      margin: 0 auto;
+
+      img{
+        margin-bottom: 25px;
+      }
+    }
+
+    .user-name{
+      font-family: $PNB;
+      font-weight: 700;
+      text-transform: none;
+      font-size: 35px;
+      margin-bottom: 5px;
+      @extend .head-section;
+    }
+    .position{
+      font-family: $PNL;
+      font-size: 18px;
+      font-weight: 300;
+      text-transform: none;
+      margin-bottom: 50px;
+      @extend .head-section;
+    }
+    .descript{
+      color: $head-color;
+      font-family: $PNR;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-bottom: 15px;
+    }
+    .social-group{
+      a{
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 15px;
+        cursor: pointer;
+      }
+    }
+
+    path#SvgjsPath1007 {
+      fill: rgb(182, 182, 182);
+      @include transition(all, .5s);
+    }
+    path#SvgjsPath1010, path#SvgjsPath1011 {
+      fill: rgb(182, 182, 182);
+      @include transition(all, .5s);
+    }
+
+    .vk:hover  path#SvgjsPath1007 {
+          fill: rgb(0, 0, 0);
+    }
+    .ins:hover  path#SvgjsPath1010, .ins:hover  path#SvgjsPath1011 {
+      fill: rgb(0, 0, 0);
+    }
+  }
+
+  .info-user-1{
+    margin: 0 0 85px 6%;
+
+  }
+
+  .info-user-2{
+    margin: 0 15px 85px 6%;
+  }
+
+  .advantages{
+    width: 100%;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding: 60px 0;
+
+    .advantage{
+      display: inline-block;
+      vertical-align: top;
+      width: 28%;
+      text-align: center;
+      margin: 0 2.5%;
+
+      figure{
+        margin: 0 auto;
+        display: inline-block;
+        vertical-align: middle;
+
+        svg#figure-1 {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      span{
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 275px;
+        color: rgb(101, 101, 101);
+        font-family: $PNR;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-left: 12px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+//modal-form
+
+#modal-form{
+  position: relative;
+
+  .form-close:before{
+    content: "";
+    display: block;
+    background: url("../img/close.png") no-repeat;
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+  .heading{
+    color: $head-color;
+    font-family: $PNSB;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 52px;
+    text-transform: uppercase;
+  }
+
+  button.btn-extra-large{
+    max-width: 506px;
+    margin-top: 30px;
+  }
+}

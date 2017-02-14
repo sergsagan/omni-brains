@@ -1,0 +1,658 @@
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .header {
+	padding: 10px 0;
+  }
+  .header-top {
+	margin-bottom: 30px;
+  }
+  .header-logo {
+	width: 18%;
+  }
+  .logo{
+	font-size: 19px;
+	line-height: 18px;
+  }
+  .logo span {
+	font-size: 15px;
+  }
+  .header-navigation {
+	width: 80%;
+  }
+  .nav {
+	display: none;
+  }
+  #menu-toggle {
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	right: 0;
+  }
+  #menu {
+	padding: 0;
+	position: absolute;
+	top: 60px;
+	right: 15px;
+	background-color: rgba(42, 46, 65, 0.85);
+	width: 100%;
+	max-width: 170px;
+	z-index: 200;
+	padding-right: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  #menu > li {
+	display: block;
+	margin-bottom: 12px;
+  }
+  #menu {
+	li {
+	  a{
+		font-size: 14px;
+		font-weight: 700;
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+
+		&:hover{
+		  color: $stack-color;
+		}
+	  }
+
+	  &:first-child{
+		padding-top: 10px;
+	  }
+	}
+  }
+  .header-callback {
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 15px;
+  }
+  .header-callback span {
+	font-size: 17px;
+	line-height: 15px;
+  }
+  .header-callback a {
+	font-size: 10px;
+  }
+  .header-slogan {
+	width: 100%;
+	padding: 30px 15px;
+  }
+  .header-animation {
+	display: block;
+	width: 100%;
+  }
+  .application-costs,
+  .number-of-applications  {
+	max-width: 130px;
+  }
+  .application-costs{
+	margin-right: 20px;
+  }
+  .application-costs .name,
+  .number-of-applications .name {
+	font-size: 11px;
+	margin-bottom: 5px;
+  }
+  .application-costs .price {
+	font-size: 22px;
+	margin-bottom: 30px;
+  }
+  .number-of-applications .amount {
+	font-size: 22px;
+	margin-bottom: 60px;
+  }
+  .application-costs .indicator {
+	height: 60px;
+	margin-bottom: 10px;
+  }
+  .number-of-applications .indicator {
+	height: 30px;
+	margin-bottom: 10px;
+  }
+  .application-costs .descript,
+  .number-of-applications .descript{
+	font-size: 10px;
+	line-height: 15px;
+  }
+  button.btn.btn-extra-large.hid-768{
+	display: none;
+  }
+  button.btn.btn-extra-large.show-768 {
+	margin: 15px auto 30px;
+	display: block;
+	max-width: 266px;
+  }
+  .header-slogan .slogan {
+	font-size: 19px;
+	line-height: 25px;
+	margin-bottom: 25px;
+  }
+  .header-descript span {
+	font-size: 10px;
+	line-height: 15px;
+	max-width: 185px;
+	margin: 0 auto;
+  }
+  .header-base {
+	margin-bottom: 30px;
+  }
+  #menu-toggle{
+	width: 25px!important;
+	height: 18px!important;
+  }
+  .about {
+	padding: 45px 0;
+	text-align: center;
+  }
+  .about .about-us {
+	max-width: 255px;
+	margin: 0 auto;
+	display: block;
+	text-align: left;
+  }
+  .about .info-user-1,
+  .about .info-user-2 {
+	max-width: 255px;
+  }
+  .about .info-user-1 {
+	margin: 0 auto 50px;
+  }
+  .about .info-user-2 {
+	margin: 0 auto 50px;
+  }
+  .about .about-us .title {
+	padding-top: 0;
+	font-size: 25px;
+  }
+  .about .about-us p {
+	font-size: 14px;
+	text-align: left;
+	line-height: 20px;
+	margin-bottom: 30px;
+  }
+  .about .info-user-1 .user-name,
+  .about .info-user-2 .user-name {
+	font-size: 25px;
+	text-align: left;
+  }
+  .about .info-user-1 .position,
+  .about .info-user-2 .position {
+	font-size: 15px;
+	margin-bottom: 30px;
+	text-align: left;
+  }
+  .about .info-user-1 .descript,
+  .about .info-user-2 .descript {
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+  }
+  .about .social-group {
+	text-align: left;
+  }
+  .about .advantages .advantage {
+	width: 100%;
+	margin: 0 0 40px;
+	text-align: left;
+
+	&:last-child{
+	  margin: 0;
+	}
+  }
+
+  .about .advantages .advantage span {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 20px;
+	margin-left: 10px;
+	text-align: left;
+	max-width: 205px;
+  }
+  .about .advantages .advantage figure img{
+	margin: 0 auto;
+  }
+  .about .advantages {
+	padding: 35px 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .header {
+	padding: 10px 0;
+  }
+  .header-top {
+	margin-bottom: 40px;
+  }
+  .header-logo {
+	width: 30%;
+  }
+  .header-navigation {
+	width: 69%;
+  }
+  .nav {
+	display: none;
+  }
+  #menu-toggle {
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	right: 0;
+  }
+  #menu {
+	padding: 0;
+	position: absolute;
+	top: 75px;
+	right: 15px;
+	background-color: rgba(42, 46, 65, 0.85);
+	width: 100%;
+	max-width: 235px;
+	z-index: 200;
+	padding-right: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  #menu > li {
+	display: block;
+	margin-bottom: 15px;
+  }
+  #menu {
+	li {
+	  a{
+		font-size: 15px;
+		font-weight: 700;
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+
+		&:hover{
+		  color: $stack-color;
+		}
+	  }
+
+	  &:first-child{
+		padding-top: 10px;
+	  }
+	}
+  }
+  .header-slogan {
+	width: 100%;
+	padding: 35px 20px;
+  }
+  .header-animation {
+	display: block;
+	width: 100%;
+  }
+  button.btn.btn-extra-large.hid-768{
+	display: none;
+  }
+  button.btn.btn-extra-large.show-768 {
+	margin: 15px auto 30px;
+	display: block;
+  }
+  .header-callback {
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 20px;
+  }
+  .header-slogan .slogan {
+	font-size: 30px;
+	line-height: 36px;
+	margin-bottom: 30px;
+  }
+  .about {
+	padding: 45px 0;
+	text-align: center;
+  }
+  .about .about-us {
+	max-width: 300px;
+	margin: 0 auto;
+	display: block;
+	text-align: left;
+  }
+  .about .info-user-1,
+  .about .info-user-2 {
+	max-width: 300px;
+  }
+  .about .info-user-1 {
+	margin: 0 auto 30px;
+  }
+  .about .info-user-2 {
+	margin: 0 auto 30px;
+  }
+  .about .about-us .title {
+	padding-top: 15px;
+	font-size: 28px;
+  }
+  .about .about-us p {
+	font-size: 15px;
+	text-align: left;
+	line-height: 20px;
+	margin-bottom: 20px;
+  }
+  .about .info-user-1 .user-name,
+  .about .info-user-2 .user-name {
+	font-size: 25px;
+	text-align: left;
+  }
+  .about .info-user-1 .position,
+  .about .info-user-2 .position {
+	font-size: 15px;
+	margin-bottom: 30px;
+	text-align: left;
+  }
+  .about .info-user-1 .descript,
+  .about .info-user-2 .descript {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+  }
+  .about .social-group {
+	text-align: left;
+  }
+  .about .advantages .advantage {
+	width: 30%;
+	margin: 0 5px;
+  }
+  .about .advantages .advantage span {
+	display: block;
+	font-size: 14px;
+	line-height: 18px;
+	margin-left: 0;
+	text-align: center;
+  }
+  .about .advantages .advantage figure {
+	margin: 0 auto 10px;
+  }
+  .about .advantages {
+	padding: 35px 0;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+	padding: 20px 0;
+  }
+  .header-top {
+	margin-bottom: 90px;
+  }
+  .header-logo {
+	width: 31%;
+  }
+  .logo {
+	font-size: 36px;
+  }
+  .logo span {
+	font-size: 28px;
+  }
+  .header-navigation {
+	display: inline-block;
+	vertical-align: top;
+	width: 68%;
+  }
+  #menu-toggle {
+	display: none;
+  }
+  .nav li:first-child {
+	padding: 0 10px 0 0;
+  }
+  .nav li {
+	padding: 0 10px;
+  }
+  .nav li a {
+	font-size: 14px;
+	line-height: 18px;
+  }
+  .header-callback span {
+	font-size: 20px;
+  }
+  .header-callback a {
+	font-size: 12px;
+  }
+  .header-slogan .slogan {
+	font-size: 32px;
+	line-height: 36px;
+  }
+  .application-costs,
+  .number-of-applications  {
+	max-width: 115px;
+  }
+  .application-costs .name,
+  .number-of-applications .name {
+	font-size: 14px;
+  }
+  .application-costs .price {
+	font-size: 30px;
+  }
+  .number-of-applications .amount {
+	font-size: 30px;
+  }
+  .application-costs .descript,
+  .number-of-applications .descript{
+	font-size: 12px;
+	line-height: 15px;
+  }
+  .btn-extra-large {
+	max-width: 250px;
+	height: 40px;
+	font-size: 15px;
+	line-height: 40px;
+  }
+  button.btn.btn-extra-large.hid-768{
+	display: block;
+  }
+  .show-768{
+	display: none;
+  }
+  .header-descript span {
+	font-size: 13px;
+	line-height: 16px;
+  }
+  .header-animation {
+	width: 42%;
+  }
+  .header-slogan {
+	width: 57%;
+  }
+  .about {
+	padding: 65px 0;
+	text-align: center;
+  }
+  .about .about-us {
+	max-width: 360px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+  }
+  .about .info-user-1,
+  .about .info-user-2 {
+	max-width: 285px;
+  }
+  .about .info-user-1 {
+	margin: 0 50px 40px 0;
+  }
+  .about .info-user-2 {
+	margin: 0 0 40px 0;
+  }
+  .about .about-us .title {
+	padding-top: 15px;
+	font-size: 30px;
+  }
+  .about .about-us p {
+	font-size: 16px;
+	text-align: center;
+	line-height: 20px;
+	margin-bottom: 20px;
+  }
+  .about .info-user-1 .user-name,
+  .about .info-user-2 .user-name {
+	font-size: 28px;
+	text-align: left;
+  }
+  .about .info-user-1 .position,
+  .about .info-user-2 .position {
+	font-size: 16px;
+	margin-bottom: 30px;
+	text-align: left;
+  }
+  .about .info-user-1 .descript,
+  .about .info-user-2 .descript {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+  }
+  .about .social-group {
+	text-align: left;
+  }
+  .about .advantages .advantage {
+	width: 30%;
+	margin: 0 1%;
+  }
+  .about .advantages .advantage span {
+	display: block;
+	font-size: 16px;
+	line-height: 20px;
+	margin-left: 0;
+	text-align: center;
+  }
+  .about .advantages .advantage figure {
+	margin: 0 auto 10px;
+  }
+  .about .advantages {
+	padding: 35px 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .header-logo {
+	width: 42%;
+  }
+  .header-navigation {
+	display: inline-block;
+	vertical-align: top;
+	width: 57%;
+  }
+  .nav li:first-child {
+	padding: 0 15px 0 0;
+  }
+  .nav li {
+	padding: 0 15px;
+  }
+  .nav li a {
+	font-size: 15px;
+	line-height: 20px;
+  }
+  .header-callback span {
+	font-size: 22px;
+  }
+  .header-callback a {
+	font-size: 13px;
+  }
+  .header-slogan .slogan {
+	font-size: 34px;
+	line-height: 40px;
+  }
+  .application-costs,
+  .number-of-applications  {
+	max-width: 160px;
+  }
+  .application-costs .name,
+  .number-of-applications .name {
+	font-size: 15px;
+  }
+  .application-costs .price {
+	font-size: 34px;
+  }
+  .number-of-applications .amount {
+	font-size: 34px;
+  }
+  .application-costs .descript,
+  .number-of-applications .descript{
+	font-size: 14px;
+	line-height: 17px;
+  }
+  .btn-extra-large {
+	max-width: 300px;
+	height: 48px;
+	font-size: 17px;
+	line-height: 48px;
+  }
+  button.btn.btn-extra-large.hid-768 {
+	display: block;
+  }
+  .show-768{
+	display: none;
+  }
+  .header-descript span {
+	font-size: 14px;
+	line-height: 18px;
+  }
+  .about {
+	padding: 85px 0;
+  }
+  .about .about-us {
+	max-width: 300px;
+	margin: 0 0 0 15px;
+  }
+  .about .info-user-1,
+  .about .info-user-2 {
+	max-width: 300px;
+  }
+  .about .info-user-1 {
+	margin: 0 0 50px 2%;
+  }
+  .about .info-user-2 {
+	margin: 0 15px 50px 2%;
+  }
+  .about .about-us .title {
+	padding-top: 30px;
+	font-size: 32px;
+  }
+  .about .about-us p {
+	font-size: 17px;
+  }
+  .about .info-user-1 .user-name,
+  .about .info-user-2 .user-name {
+	font-size: 29px;
+  }
+  .about .info-user-1 .position,
+  .about .info-user-2 .position {
+	font-size: 17px;
+	margin-bottom: 40px;
+  }
+  .about .info-user-1 .descript,
+  .about .info-user-2 .descript {
+	font-size: 15px;
+	line-height: 24px;
+  }
+  .about .advantages .advantage span {
+	display: block;
+	font-size: 17px;
+	line-height: 24px;
+	margin-left: 0;
+	text-align: center;
+  }
+  .about .advantages .advantage figure {
+	margin: 0 auto 10px;
+  }
+  .about .advantages {
+	padding: 45px 0;
+  }
+}
+
+@media only screen and (min-width: 1380px) and (max-width: 1649px) {
+  .nav li:first-child {
+	padding: 0 25px 0 0;
+  }
+  .nav li {
+	padding: 0 25px;
+  }
+  button.btn.btn-extra-large.hid-768 {
+	display: block;
+  }
+  button.btn.btn-extra-large.show-768{
+	display: none;
+  }
+}
