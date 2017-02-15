@@ -1,8 +1,2 @@
-# My gulp template
-# npm && bower install
+# omni brains project
 
-# gulp default
-
-# builds/development & builds/production
-
-# enjoy gulp-ruby-sass, main-bower-files, gulp-svg-sprites

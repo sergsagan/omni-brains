@@ -172,7 +172,7 @@ $(function() {
 	new WOW().init();
 	
 
-    $('.responsive').slick({
+    /*$('.responsive').slick({
         dots: true,
         arrows: false,
         infinite: false,
@@ -208,7 +208,15 @@ $(function() {
             // settings: "unslick"
             // instead of a settings object
         ]
-    });
+    });*/
+	
+	
+	$('.slick-slider').slick({
+		dots: true,
+		arrows: true,
+		infinite: false,
+		speed: 300
+	});
     
 
     $("#input-phone").mask("+7 (999) 999-99-99");
@@ -216,19 +224,19 @@ $(function() {
 	
     //Аякс отправка форм
     //Документация: http://api.jquery.com/jquery.ajax/
-	$("#feadback-form").submit(function() {
+	$("#consult-form").submit(function() {
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
 			data: $(this).serialize()
 		}).done(function() {
-			$('#feadback-form')[0].reset(
+			$('#consult-form')[0].reset(
 				setTimeout(function () {}, 1000)
 			);
 			
-			$('#popUpMessage').removeClass('hiddenDiv');
+			$('#correctMessage').removeClass('hiddenDiv');
 			setTimeout(function () {
-				$('#popUpMessage').addClass('hiddenDiv');
+				$('#correctMessage').addClass('hiddenDiv');
 			}, 2000);
 		});
 		return false;

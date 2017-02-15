@@ -56,3 +56,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'PTRoubleSerif';
+  src: url('../fonts/PTRoubleSerif/PTRoubleSerif.eot');
+  src: url('../fonts/PTRoubleSerif/PTRoubleSerif.woff2') format('woff2'),
+  url('../fonts/PTRoubleSerif/PTRoubleSerif.woff') format('woff'),
+  url('../fonts/PTRoubleSerif/PTRoubleSerif.ttf') format('truetype'),
+  url('../fonts/PTRoubleSerif/PTRoubleSerif.svg#PTRoubleSerif') format('svg'),
+  url('../fonts/PTRoubleSerif/PTRoubleSerif.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

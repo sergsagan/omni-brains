@@ -640,6 +640,87 @@
   .about .advantages {
 	padding: 45px 0;
   }
+  .work {
+	padding: 30px 0 30px;
+  }
+  .work .title,
+  .work .title-2,
+  .skins .title,
+  .services .title,
+  .stages .title,
+  .guarantees .title,
+  .contacts .title{
+	font-size: 32px;
+  }
+  .work .step {
+	margin-right: 40px;
+  }
+  .skins .slick-slider .slider-item .item-content {
+	padding: 30px 20px;
+  }
+  .skins .slick-slider .slider-item .item-content .list-item {
+	width: 46%;
+	margin-right: 30px;
+  }
+  .skins .slick-slider .slider-item .item-content .list-item ul > li {
+	font-size: 16px;
+	line-height: 26px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container {
+	max-width: 460px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container .screen {
+	margin-right: 15px;
+	max-width: 140px;
+  }
+  .skins .slick-slider .slider-item .item-heading {
+	height: 100px;
+	line-height: 100px;
+	font-size: 40px;
+  }
+  .services .item-service {
+	max-width: 330px;
+	padding: 25px 20px;
+  }
+  .services .item-service .list li {
+	font-size: 15px;
+  }
+  .services .item-service .name-product {
+	font-size: 22px;
+	margin-bottom: 5px;
+  }
+  .services .item-service .price span {
+	font-size: 38px;
+  }
+  .services .item-service .actions p{
+	font-size: 15px;
+	line-height: 20px;
+  }
+  .services p {
+	font-size: 14px;
+  }
+  #consult-form input {
+	max-width: 235px;
+	margin-right: 10px;
+  }
+  #consult-form button {
+	max-width: 235px;
+  }
+  .guarantees .variant {
+	max-width: 300px;
+	margin: 0 10px;
+  }
+  .guarantees .variant figure .variant-title {
+	font-size: 22px;
+  }
+  .guarantees .variant figure p {
+	font-size: 15px;
+  }
+  .contacts .working-info {
+	margin-right: 15%;
+  }
+
+
 }
 
 @media only screen and (min-width: 1380px) and (max-width: 1649px) {
