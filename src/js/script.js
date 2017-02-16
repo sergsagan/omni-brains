@@ -241,7 +241,7 @@ $(function() {
 				$(tabs).children("ul").children("li").eq(i).addClass("active");
 			};
 			
-			showPage(0);
+			showPage(1);
 			
 			$(tabs).children("ul").children("li").each(function(index, element){
 				$(element).attr("data-page", i);

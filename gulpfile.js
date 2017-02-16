@@ -37,7 +37,7 @@ var src = {
 
     server = {
         host: 'localhost',
-        port: '9000'
+        port: '9001'
     },
 
     env,
