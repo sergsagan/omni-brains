@@ -515,11 +515,15 @@
     max-width: 860px;
     width: 100%;
 
-    .brand{
+    figure{
+      margin: 0 auto;
+    }
+
+    /*.brand{
       display: inline-block;
       vertical-align: middle;
       margin: 0 10px 30px;
-    }
+    }*/
   }
 }
 
@@ -611,7 +615,7 @@
         width: 100%;
         height: 113px;
         line-height: 113px;
-        background-color: $bg-color;
+        background-color: #353354;
         color: $light-color;
         font-family: $PNR;
         font-size: 42px;
@@ -666,6 +670,50 @@
             margin-bottom: 20px;
           }
         }
+        .accordion {
+          max-width: 480px;
+          width: 100%;
+          display: none;
+        }
+        .accordion .title-list {
+          background: url("../img/arr-down-acc.png") no-repeat 95% 10px;
+          color: $head-color;
+          font-family: $PNSB;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 26px;
+          margin-bottom: 15px;
+          padding-left: 10px;
+          cursor: pointer;
+        }
+        .accordion .title-list.active {
+          background: url("../img/arr-bot-acc.png") no-repeat 95% 10px;
+          color: $head-color;
+          font-family: $PNSB;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 25px;
+          margin-bottom: 15px;
+          padding-left: 10px;
+          cursor: pointer;
+        }
+
+        .accordion{
+
+          ul > li{
+            display: block;
+            color: $base-color;
+            font-family: $PNR;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 26px;
+            padding-left: 10px;
+          }
+          .list{
+            margin-bottom: 20px;
+            display: none;
+          }
+        }
 
         .video-container{
           margin: 0 auto;
@@ -676,7 +724,8 @@
           .video{
             position: relative;
             width: 100%;
-            height: 100%;
+            max-width: 507px;
+            height: auto;
             margin-bottom: 30px;
           }
           .play{
@@ -736,12 +785,13 @@
     height: auto;
     border: 3px solid rgb(245, 245, 245);
     padding: 35px 50px;
-    margin-right: -3px;
+    margin-right: -5.5px;
     margin-bottom: 45px;
     @include transition(all 0.5s);
 
     &:hover{
       border: 3px solid rgb(3, 169, 245);
+      margin-right: -5.5px;
     }
 
     .name-product{
@@ -790,13 +840,15 @@
     }
     .actions{
       color: rgb(64, 64, 64);
-      font-size: 14px;
-      line-height: 24px;
       text-align: center;
       p{
+        font-size: 14px;
+        line-height: 24px;
         font-family: $PNR;
         font-weight: 400;
         span{
+          font-size: 14px;
+          line-height: 24px;
           font-family: $PNSB;
           font-weight: 600;
         }
@@ -809,6 +861,135 @@
     text-align: center;
     color: rgb(129, 129, 129);
     @extend .text;
+  }
+  .tabs{
+    display: none;
+  }
+  .tabs > div{
+    padding-top: 75px;
+
+    .price{
+      color: $head-color;
+      font-family: $PNR;
+      font-size: 19px;
+      font-weight: 400;
+      margin-bottom: 25px;
+
+      span{
+        color: $head-color;
+        font-family: $PNB;
+        font-size: 32px;
+        font-weight: 700;
+      }
+      .rouble{
+        color: $head-color;
+        font-family: $PNSB;
+        font-size: 32px;
+        font-weight: 600;
+        margin-left: 3px;
+      }
+    }
+
+    .list-mobile{
+      margin-bottom: 25px;
+      width: 49%;
+      display: inline-block;
+      vertical-align: top;
+
+      &:before{
+        content:"";
+        display: none;
+      }
+
+      li{
+        display: block;
+        color: $base-color;
+        font-family: $PNR;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 15px;
+        line-height: 25px;
+        background-color: transparent;
+        padding: 0;
+        float: none;
+        width: 100%;
+
+        &:hover{
+          background-color: transparent;
+        }
+      }
+    }
+
+    .btn-small{
+      margin-bottom: 25px;
+    }
+    .actions{
+      color: rgb(64, 64, 64);
+      text-align: center;
+      margin-bottom: 15px;
+      p{
+        font-family: $PNR;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        span{
+          font-family: $PNSB;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .line{
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto 15px;
+      height: 3px;
+      background-color: #03a9f5;
+    }
+  }
+  .tabs ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  .tabs ul:before{
+    content:"";
+    display: block;
+    height: 3px;
+    background: #03a9f5;
+  }
+
+  .tabs ul li{
+    margin: 0;
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 33.3%;
+    padding:15px 15px;
+    background-color: #f5f5f5;
+    color: #262626;
+    font-family: $PNSB;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .tabs ul li.active, .tabs ul li.active:hover{
+    background: #03a9f5;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: #fefefe;
+    font-family: $PNSB;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    width: 33.3%;
+    padding: 18px 15px;
+  }
+  .tabs ul li:hover{
+    background-color: #f5f5f5;
   }
 
 }
@@ -1121,6 +1302,8 @@
   padding: 50px 0;
   background-color: $light-color;
 
+  @include clearfix;
+
   .container{
     position: relative;
   }
@@ -1167,11 +1350,11 @@
 }
 
 #scrollUp {
-  position: fixed;
-  bottom: 50px;
+  position: absolute;
+  top: 25px;
   right: 0;
   display: none;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
   z-index: 1000;
   max-width: 144px;
   width: 100%;

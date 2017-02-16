@@ -210,11 +210,334 @@
 	text-align: left;
 	max-width: 205px;
   }
+  .about .advantages .advantage figure {
+	width: 65px;
+  }
   .about .advantages .advantage figure img{
 	margin: 0 auto;
   }
   .about .advantages {
 	padding: 35px 0;
+	max-width: 300px;
+	margin: 0 auto;
+  }
+
+  .work {
+	padding: 30px 0 30px;
+  }
+  .work .title,
+  .work .title-2,
+  .skins .title,
+  .services .title,
+  .stages .title,
+  .guarantees .title,
+  .contacts .title {
+	font-size: 26px;
+  }
+  .work .title {
+	margin-bottom: 50px;
+  }
+  .work .step {
+	margin-right: 0;
+	max-width: 280px;
+  }
+  .circle, .work .step .circle {
+	width: 45px;
+	height: 45px;
+	border-radius: 45px;
+  }
+  .work .step .circle:before {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 200px;
+	left: 8px;
+	width: 27px;
+	height: 43px;
+	background: url("../img/arrow-down-2.png") no-repeat;
+  }
+  .work .step .step-title {
+	font-size: 20px;
+	margin-bottom: 20px;
+	height: auto;
+  }
+  .work .step p {
+	font-size: 14px;
+	line-height: 24px;
+  }
+  .skins .slick-slider .slider-item .item-content {
+	padding: 20px 0;
+  }
+  .skins .slick-slider .slider-item .item-content .list-item {
+	display: none;
+  }
+  .skins .slick-slider .slider-item .item-content .accordion {
+	display: block;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container {
+	max-width: 507px;
+	width: 100%;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container .title-screen {
+	font-size: 18px;
+	line-height: 24px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container .video {
+	margin-bottom: 20px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container .play {
+	top: 25%;
+	width: 45px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container .screen {
+	margin-right: 1px;
+	width: 32%;
+	display: inline-block;
+  }
+  .skins .slick-slider .slider-item .item-content .list-item .title-list {
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 10px;
+  }
+  .skins .slick-slider .slider-item .item-heading {
+	height: 70px;
+	line-height: 70px;
+	font-size: 24px;
+	padding: 0 10px;
+	position: relative;
+  }
+  .skins .slick-slider .slider-item .item-heading a {
+	font-size: 14px;
+	padding-top: 0;
+	position: absolute;
+	top: 45px;
+	left: 15px;
+  }
+  .skins .slick-slider .slick-prev, .skins .slick-slider .slick-next {
+	top: 103%;
+	bottom: 0;
+	width: 30px;
+	height: 40px;
+  }
+  .skins .slick-slider{
+	margin-bottom: 10px;
+  }
+  .skins .slick-slider .slick-prev:before {
+	top: 10px;
+	width: 133px;
+	height: 24px;
+	background: url("../img/left-mini.png") no-repeat;
+  }
+  .skins .slick-slider .slick-next:before {
+	top: 10px;
+	width: 13px;
+	height: 24px;
+	background: url("../img/right-mini.png") no-repeat;
+  }
+  .skins .slick-slider .slick-prev {
+	left: -10px;
+	z-index: 1000;
+  }
+  .skins .slick-slider .slick-next {
+	right: -10px;
+	z-index: 1000;
+  }
+  .skins .slick-slider .slick-dots {
+	bottom: -40px;
+  }
+  .services .tabs > div {
+	padding-top: 85px;
+  }
+  .services .tabs > div .list-mobile li {
+	line-height: 20px;
+  }
+  .services .item-service {
+	display: none;
+  }
+  .services .item-service .price .rouble {
+	font-size: 28px;
+  }
+  .services .item-service .list li {
+	font-size: 14px;
+	margin-bottom: 10px;
+  }
+  .services .item-service .name-product {
+	font-size: 20px;
+	margin-bottom: 5px;
+  }
+  .services .item-service .price span {
+	font-size: 29px;
+  }
+  .services .item-service .actions p{
+	font-size: 13px;
+	line-height: 18px;
+  }
+  .services p {
+	font-size: 13px;
+	line-height: 18px;
+  }
+  .services .item-service .actions p span {
+	font-size: 12px;
+  }
+  .services .item-service .list {
+	margin-bottom: 30px;
+  }
+  .btn-small {
+	max-width: 199px;
+	height: 40px;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 40px;
+  }
+  .services .tabs{
+	display: inline-block;
+  }
+  .stages {
+	padding: 0;
+  }
+  .stages .title {
+	margin-bottom: 50px;
+  }
+  .stages .item-stage .stage-info {
+	width: 68%;
+  }
+  .stages .item-stage .stage-info .stage-title {
+	font-size: 16px;
+	margin-bottom: 10px;
+  }
+  .stages .item-stage .stage-info p {
+	font-size: 14px;
+	line-height: 20px;
+  }
+  .consult {
+	padding: 40px 0;
+	text-align: center;
+  }
+  .consult span {
+	font-size: 18px;
+	margin: 0 auto 30px;
+	text-align: center;
+	line-height: 25px;
+  }
+  #consult-form input {
+	max-width: 300px;
+	margin: 0 auto 15px;
+	height: 50px;
+	padding: 0 10px;
+	font-size: 15px;
+	line-height: 50px;
+  }
+  #consult-form button {
+	max-width: 300px;
+	font-size: 15px;
+	height: 50px;
+  }
+  .guarantees .variant {
+	max-width: 300px;
+	width: 100%;
+	margin: 0 auto 30px;
+	display: block;
+  }
+  .guarantees .variant figure .variant-title {
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 15px;
+  }
+  .guarantees .variant figure p {
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+  }
+  .guarantees .variant figure img {
+	margin-bottom: 15px;
+	width: 50px;
+  }
+  .contacts .working-info {
+	margin-right: 0;
+	width: 100%;
+  }
+  .contacts .subscribe {
+	width: 100%;
+  }
+  .contacts .working-info span {
+	font-size: 18px;
+	margin-bottom: 20px;
+  }
+  .contacts .working-info p {
+	font-size: 14px;
+  }
+  .contacts .working-info .phone {
+	font-size: 18px;
+  }
+  .contacts .working-info .heading {
+	font-size: 18px;
+	margin-bottom: 10px;
+  }
+  .contacts .working-info table {
+	margin-bottom: 30px;
+  }
+  .contacts .subscribe .vk-block {
+	padding: 30px;
+	margin-bottom: 20px;
+  }
+  .contacts .working-info table td {
+	padding: 5px;
+  }
+  .contacts .subscribe .vk-block p,
+  .contacts .subscribe .post-block p{
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 10px;
+  }
+  .empty {
+	height: 220px;
+  }
+  .footer {
+	height: 220px;
+	margin: -220px auto;
+	padding: 40px 0;
+  }
+  .footer .personal-information {
+	display: block;
+	font-size: 13px;
+	line-height: 18px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 50px;
+  }
+  .footer .copyright {
+	display: block;
+	width: 100%;
+	text-align: center;
+  }
+  .footer .copyright span {
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 0;
+  }
+  #modal-form {
+	max-width: 300px;
+	padding: 20px 30px 20px;
+  }
+  #modal-form input {
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+  }
+  #modal-form .heading {
+	font-size: 20px;
+	line-height: 30px;
+  }
+  #modal-form button.btn-extra-large {
+	max-width: 505px;
+	margin-top: 20px;
+	height: 40px;
+	line-height: 40px;
+  }
+  #scrollUp {
+	top: 58px;
+	right: 80px;
   }
 }
 
@@ -352,21 +675,312 @@
 	text-align: left;
   }
   .about .advantages .advantage {
-	width: 30%;
-	margin: 0 5px;
+	width: 100%;
+	margin: 0 0 25px;
+	text-align: left;
   }
   .about .advantages .advantage span {
-	display: block;
+	display: inline-block;
 	font-size: 14px;
-	line-height: 18px;
-	margin-left: 0;
-	text-align: center;
+	line-height: 20px;
+	margin-left: 40px;
+	text-align: left;
   }
   .about .advantages .advantage figure {
-	margin: 0 auto 10px;
+	margin: 0 auto 0;
+	width: 65px;
   }
   .about .advantages {
 	padding: 35px 0;
+	max-width: 390px;
+	margin: 0 auto;
+  }
+  .work {
+	padding: 30px 0 30px;
+  }
+  .work .title,
+  .work .title-2,
+  .skins .title,
+  .services .title,
+  .stages .title,
+  .guarantees .title,
+  .contacts .title {
+	font-size: 28px;
+  }
+  .work .step {
+	margin-right: 0;
+	max-width: 280px;
+  }
+  .circle, .work .step .circle {
+	width: 45px;
+	height: 45px;
+	border-radius: 45px;
+  }
+  .work .step .circle:before {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 180px;
+	left: 8px;
+	width: 27px;
+	height: 43px;
+	background: url("../img/arrow-down-2.png") no-repeat;
+  }
+  .work .step .step-title {
+	font-size: 20px;
+	margin-bottom: 20px;
+	height: auto;
+  }
+  .work .step p {
+	font-size: 14px;
+	line-height: 20px;
+  }
+  .skins .slick-slider .slider-item .item-content {
+	padding: 20px 20px;
+  }
+  .skins .slick-slider .slider-item .item-content .list-item {
+	width: 100%;
+	margin-right: 0;
+  }
+  .skins .slick-slider .slider-item .item-content .accordion {
+	display: none;
+  }
+  .skins .slick-slider .slider-item .item-content .list-item ul > li {
+	font-size: 14px;
+	line-height: 20px;
+  }
+  .skins .slick-slider .slider-item .item-content .list-item .list {
+	margin-bottom: 10px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container {
+	width: 100%;
+	max-width: 507px;
+	margin: 0 auto;
+	display: block;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container .title-screen {
+	font-size: 18px;
+	line-height: 24px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container .video {
+	margin-bottom: 20px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container .play {
+	top: 25%;
+	width: 45px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container .screen {
+	margin-right: 0;
+	width: 32%;
+	display: inline-block;
+  }
+  .skins .slick-slider .slider-item .item-content .list-item .title-list {
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 10px;
+  }
+  .skins .slick-slider .slider-item .item-heading {
+	height: 70px;
+	line-height: 70px;
+	font-size: 25px;
+  }
+  .skins .slick-slider .slider-item .item-heading a {
+	font-size: 15px;
+	padding-top: 22px;
+  }
+  .skins .slick-slider .slick-prev, .skins .slick-slider .slick-next {
+	top: 103%;
+	bottom: 0;
+	width: 35px;
+	height: 70px;
+  }
+  .skins .slick-slider{
+	margin-bottom: 0;
+  }
+  .skins .slick-slider .slick-prev:before {
+	top: 0;
+	z-index: 1000;
+  }
+  .skins .slick-slider .slick-next:before {
+	top: 0;
+	z-index: 1000;
+  }
+  .skins .slick-slider .slick-prev {
+	left: -10px;
+  }
+  .skins .slick-slider .slick-next {
+	right: 10px;
+  }
+  .skins .slick-slider .slick-dots {
+	bottom: -38px;
+  }
+  .services .item-service {
+	display: none;
+  }
+  .services .item-service .price .rouble {
+	font-size: 28px;
+  }
+  .services .item-service .list li {
+	font-size: 14px;
+	margin-bottom: 10px;
+  }
+  .services .item-service .name-product {
+	font-size: 20px;
+	margin-bottom: 5px;
+  }
+  .services .item-service .price span {
+	font-size: 29px;
+  }
+  .services .item-service .actions p{
+	font-size: 13px;
+	line-height: 18px;
+  }
+  .services p {
+	font-size: 13px;
+	line-height: 18px;
+  }
+  .services .item-service .actions p span {
+	font-size: 12px;
+  }
+  .services .item-service .list {
+	margin-bottom: 30px;
+  }
+  .btn-small {
+	max-width: 199px;
+	height: 40px;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 40px;
+  }
+  .services .tabs{
+	display: inline-block;
+  }
+  .stages {
+	padding: 30px 0;
+  }
+  .stages .title {
+	margin-bottom: 50px;
+  }
+  .stages .item-stage .stage-info {
+	width: 79%;
+  }
+  .stages .item-stage .stage-info .stage-title {
+	font-size: 18px;
+	margin-bottom: 10px;
+  }
+  .stages .item-stage .stage-info p {
+	font-size: 15px;
+	line-height: 20px;
+  }
+  .consult {
+	padding: 40px 0;
+	text-align: center;
+  }
+  .consult span {
+	font-size: 20px;
+	margin: 0 auto 30px;
+	text-align: center;
+  }
+  #consult-form input {
+	max-width: 300px;
+	margin: 0 auto 15px;
+	height: 50px;
+	padding: 0 10px;
+	font-size: 15px;
+	line-height: 50px;
+  }
+  #consult-form button {
+	max-width: 300px;
+	font-size: 15px;
+	height: 50px;
+  }
+  .guarantees .variant {
+	max-width: 300px;
+	width: 100%;
+	margin: 0 auto 30px;
+	display: block;
+  }
+  .guarantees .variant figure .variant-title {
+	font-size: 19px;
+	line-height: 24px;
+	text-align: center;
+  }
+  .guarantees .variant figure p {
+	font-size: 13px;
+	line-height: 20px;
+	text-align: center;
+  }
+  .guarantees .variant figure img {
+	margin-bottom: 15px;
+	width: 50px;
+  }
+  .contacts .working-info {
+	margin-right: 0;
+	width: 100%;
+  }
+  .contacts .subscribe {
+	width: 100%;
+  }
+  .contacts .working-info span {
+	font-size: 20px;
+	margin-bottom: 25px;
+  }
+  .contacts .working-info p {
+	font-size: 15px;
+  }
+  .contacts .working-info .phone {
+	font-size: 20px;
+  }
+  .contacts .working-info .heading {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  .contacts .working-info table td {
+	padding: 5px;
+  }
+  .contacts .subscribe .vk-block p,
+  .contacts .subscribe .post-block p{
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 10px;
+  }
+  .footer .personal-information {
+	display: block;
+	font-size: 13px;
+	line-height: 18px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 50px;
+  }
+  .footer .copyright {
+	display: block;
+	width: 100%;
+	text-align: center;
+  }
+  .footer .copyright span {
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 0;
+  }
+
+  #modal-form {
+	max-width: 450px;
+	padding: 40px 60px 40px;
+  }
+  #modal-form input {
+	height: 45px;
+	font-size: 15px;
+	line-height: 45px;
+  }
+  #modal-form .heading {
+	font-size: 22px;
+	line-height: 40px;
+  }
+  #modal-form button.btn-extra-large {
+	max-width: 505px;
+	margin-top: 20px;
+	height: 45px;
+	line-height: 45px;
   }
 
 }
@@ -499,8 +1113,8 @@
   }
   .about .info-user-1 .descript,
   .about .info-user-2 .descript {
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 15px;
+	line-height: 22px;
 	text-align: left;
   }
   .about .social-group {
@@ -522,6 +1136,208 @@
   }
   .about .advantages {
 	padding: 35px 0;
+  }
+  .work {
+	padding: 30px 0 30px;
+  }
+  .work .title,
+  .work .title-2,
+  .skins .title,
+  .services .title,
+  .stages .title,
+  .guarantees .title,
+  .contacts .title{
+	font-size: 30px;
+  }
+  .work .step {
+	margin-right: 15px;
+	max-width: 230px;
+  }
+  .work .step .circle:before {
+	left: 52px;
+  }
+  .work .step .step-title {
+	font-size: 22px;
+	margin-bottom: 20px;
+	height: 50px;
+  }
+  .work .step p {
+	font-size: 15px;
+	line-height: 22px;
+  }
+  .skins .slick-slider .slider-item .item-content {
+	padding: 20px 20px;
+  }
+  .skins .slick-slider .slider-item .item-content .list-item {
+	width: 45%;
+	margin-right: 20px;
+  }
+  .skins .slick-slider .slider-item .item-content .accordion {
+	display: none;
+  }
+  .skins .slick-slider .slider-item .item-content .list-item ul > li {
+	font-size: 14px;
+	line-height: 20px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container {
+	max-width: 350px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container .video {
+	margin-bottom: 20px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container .play {
+	top: 25%;
+	width: 45px;
+  }
+  .skins .slick-slider .slider-item .item-content .video-container .screen {
+	margin-right: 15px;
+	max-width: 140px;
+	display: block;
+  }
+  .skins .slick-slider .slider-item .item-content .list-item .title-list {
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 10px;
+  }
+  .skins .slick-slider .slider-item .item-heading {
+	height: 75px;
+	line-height: 75px;
+	font-size: 30px;
+  }
+  .skins .slick-slider .slider-item .item-heading a {
+	font-size: 18px;
+	padding-top: 25px;
+  }
+  .services .item-service {
+	max-width: 240px;
+	padding: 15px 10px;
+  }
+  .services .item-service .price .rouble {
+	font-size: 28px;
+  }
+  .services .item-service .list li {
+	font-size: 14px;
+	margin-bottom: 10px;
+  }
+  .services .item-service .name-product {
+	font-size: 20px;
+	margin-bottom: 5px;
+  }
+  .services .item-service .price span {
+	font-size: 29px;
+  }
+  .services .item-service .actions p{
+	font-size: 13px;
+	line-height: 18px;
+  }
+  .services p {
+	font-size: 13px;
+	line-height: 18px;
+  }
+  .services .item-service .actions p span {
+	font-size: 12px;
+  }
+  .services .item-service .list {
+	margin-bottom: 30px;
+  }
+  .btn-small {
+	max-width: 199px;
+	height: 40px;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 40px;
+  }
+  .stages {
+	padding: 30px 0;
+  }
+  .stages .title {
+	margin-bottom: 50px;
+  }
+  .stages .item-stage .stage-info {
+	max-width: 630px;
+  }
+  .stages .item-stage .stage-info .stage-title {
+	font-size: 18px;
+	margin-bottom: 10px;
+  }
+  .stages .item-stage .stage-info p {
+	font-size: 15px;
+	line-height: 20px;
+  }
+  .consult span {
+	font-size: 22px;
+	margin: 0 auto 30px;
+  }
+  #consult-form input {
+	max-width: 175px;
+	margin-right: 5px;
+	height: 40px;
+	padding: 0 10px;
+	font-size: 15px;
+	line-height: 40px;
+  }
+  #consult-form button {
+	max-width: 175px;
+	font-size: 14px;
+	height: 40px;
+  }
+  .guarantees .variant {
+	max-width: 220px;
+	margin: 0 10px;
+  }
+  .guarantees .variant figure .variant-title {
+	font-size: 20px;
+	line-height: 24px;
+  }
+  .guarantees .variant figure p {
+	font-size: 14px;
+	line-height: 20px;
+  }
+  .guarantees .variant figure img {
+	margin-bottom: 15px;
+	width: 50px;
+  }
+  .contacts .working-info {
+	margin-right: 6%;
+	max-width: 350px;
+  }
+  .contacts .working-info span {
+	font-size: 20px;
+	margin-bottom: 25px;
+  }
+  .contacts .working-info p {
+	font-size: 15px;
+  }
+  .contacts .working-info .phone {
+	font-size: 20px;
+  }
+  .contacts .working-info .heading {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  .contacts .working-info table td {
+	padding: 5px;
+  }
+  .contacts .subscribe .vk-block p,
+  .contacts .subscribe .post-block p{
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 10px;
+  }
+  .footer .personal-information {
+	font-size: 13px;
+	line-height: 18px;
+  }
+  .footer .copyright span {
+	font-size: 13px;
+	line-height: 18px;
+  }
+  #modal-form {
+	padding: 50px 80px 50px;
+  }
+  #modal-form button.btn-extra-large {
+	max-width: 505px;
+	height: 45px;
   }
 }
 
@@ -662,6 +1478,9 @@
 	width: 46%;
 	margin-right: 30px;
   }
+  .skins .slick-slider .slider-item .item-content .accordion {
+	display: none;
+  }
   .skins .slick-slider .slider-item .item-content .list-item ul > li {
 	font-size: 16px;
 	line-height: 26px;
@@ -679,7 +1498,7 @@
 	font-size: 40px;
   }
   .services .item-service {
-	max-width: 330px;
+	max-width: 328px;
 	padding: 25px 20px;
   }
   .services .item-service .list li {
@@ -723,6 +1542,25 @@
 
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1280px){
+  .about .info-user-2 {
+	margin: 0 15px 85px 5%;
+  }
+  .about .info-user-1 {
+	margin: 0 0 85px 5%;
+  }
+  .about .advantages .advantage {
+	width: 29%;
+	margin: 0 2%;
+  }
+  #consult-form input {
+	margin-right: 15px;
+  }
+  .guarantees .variant {
+	margin: 0 48px;
+  }
+}
+
 @media only screen and (min-width: 1380px) and (max-width: 1649px) {
   .nav li:first-child {
 	padding: 0 25px 0 0;
@@ -734,6 +1572,9 @@
 	display: block;
   }
   button.btn.btn-extra-large.show-768{
+	display: none;
+  }
+  .skins .slick-slider .slider-item .item-content .accordion {
 	display: none;
   }
 }

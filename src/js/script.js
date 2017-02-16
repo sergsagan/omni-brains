@@ -100,8 +100,6 @@ $(function() {
 // Optional arguments are 'speed' and 'accordion' (true or false) to disable the behavior of closing other sub
 	$('#menu').accordionMenu();
 	
-	
-	
 	//modal
 	
 	$('.order').click( function(event){
@@ -150,65 +148,37 @@ $(function() {
 		}
 	});
 	
-	//change
-	$('.form-of-training .order-form').click(function() {
-		$('.form-of-training').find(".name, .price, .price .rub").removeClass("active");
-		$(this).parents('.form-of-training').find(".name").toggleClass("active").fadeIn(400);
-		$(this).parents('.form-of-training').find(".price, .price .rub").toggleClass("active").fadeIn(400);
+	$("#modal-form").submit(function() {
+		
+		if ($("#modal-form").valid()) {
+			var th = $(this);
+			$.ajax({
+				type: "POST",
+				url: "mail.php",
+				data: th.serialize()
+			}).done(function () {
+				
+				$(".success").addClass("visible");
+				setTimeout(function () {
+					// Done Functions
+					th.trigger("reset");
+					$(".success").removeClass("visible");
+				}, 1000);
+				
+				$('#modal-form')[0].reset(
+					setTimeout(function () {}, 1000)
+				);
+				
+				$("#modal-form").hide();
+				
+				$('#overlay').css({'display': 'none'});
+			});
+		}
+		return false;
 	});
 	
-	$('.practices .order-form').click(function() {
-		$('.practices').find(".name, .price, .price .rub").removeClass("active");
-		$(this).parents('.practices').find(".name").toggleClass("active").fadeIn(400);
-		$(this).parents('.practices').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	});
-	
-	$('.course .order-form').click(function() {
-		$('.course').find(".name, .price, .price .rub").removeClass("active");
-		$(this).parents('.course').find(".name").toggleClass("active").fadeIn(400);
-		$(this).parents('.course').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	});
 	
 	new WOW().init();
-	
-
-    /*$('.responsive').slick({
-        dots: true,
-        arrows: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: false,
-                    arrows: false,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });*/
 	
 	
 	$('.slick-slider').slick({
@@ -217,9 +187,20 @@ $(function() {
 		infinite: false,
 		speed: 300
 	});
-    
-
-    $("#input-phone").mask("+7 (999) 999-99-99");
+	
+	//accordion
+		
+	$(".accordion .title-list").eq(2).addClass("active");
+	$(".accordion .list").eq(2).show();
+	
+	$(".accordion .title-list").click(function(){
+		$(this).next(".list").slideToggle("slow")
+			.siblings(".list:visible").slideUp("slow");
+		$(this).toggleClass("active");
+		$(this).siblings(".title-list").removeClass("active");
+	});
+	
+	$("#input-phone").mask("+7 (999) 999-99-99");
 	
 	
     //Аякс отправка форм
@@ -241,4 +222,39 @@ $(function() {
 		});
 		return false;
 	});
+});
+
+
+//mobile-tabs
+
+(function($){
+	jQuery.fn.lightTabs = function(options){
+		
+		var createTabs = function(){
+			tabs = this;
+			i = 0;
+			
+			showPage = function(i){
+				$(tabs).children("div").children("div").hide();
+				$(tabs).children("div").children("div").eq(i).show();
+				$(tabs).children("ul").children("li").removeClass("active");
+				$(tabs).children("ul").children("li").eq(i).addClass("active");
+			};
+			
+			showPage(0);
+			
+			$(tabs).children("ul").children("li").each(function(index, element){
+				$(element).attr("data-page", i);
+				i++;
+			});
+			
+			$(tabs).children("ul").children("li").click(function(){
+				showPage(parseInt($(this).attr("data-page")));
+			});
+		};
+		return this.each(createTabs);
+	};
+})(jQuery);
+$(document).ready(function(){
+	$(".tabs").lightTabs();
 });
